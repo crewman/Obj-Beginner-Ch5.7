@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Objc-5.7-While' target in the 'Objc-5.7-While' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
