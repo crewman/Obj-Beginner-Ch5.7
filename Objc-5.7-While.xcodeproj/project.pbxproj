@@ -29,7 +29,7 @@
 		A974D71716E076770051AC13 /* Objc-5.7-While */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objc-5.7-While"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A974D71B16E076770051AC13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A974D71E16E076770051AC13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A974D72116E076770051AC13 /* Objc-5.7-While-Prefix.pch */ = {isa = PBXFileReference; path = "Objc-5.7-While-Prefix.pch"; sourceTree = "<group>"; };
+		A974D72116E076770051AC13 /* Objc-5.7-While-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objc-5.7-While-Prefix.pch"; sourceTree = "<group>"; };
 		A974D72216E076770051AC13 /* Objc_5_7_While.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Objc_5_7_While.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
