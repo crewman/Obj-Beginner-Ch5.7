@@ -112,6 +112,9 @@ int main(int argc, const char * argv[])
 
 /*
  
+ // The While Approach:
+ 
+ 
  @autoreleasepool 
  {
  
@@ -133,6 +136,28 @@ int main(int argc, const char * argv[])
  
  
  
+ 
+ // The Do Approach - have the condition at the end, remember when inputnumber = 0, it's all over:
+ 
+ 
+ @autoreleasepool
+ {
+    int inputnumber, flipped_number;
+    NSLog(@"Enter your number, Puny Earthling: ");
+    scanf("%i", &inputnumber);
+    
+    do {
+ 
+        flipped_number = inputnumber % 10;
+        NSLog(@"%i", flipped_number);
+        inputnumber /= 10;
+ 
+ 
+ 
+        }
+        
+    while ( number != 0);
+ }
  
  
  
