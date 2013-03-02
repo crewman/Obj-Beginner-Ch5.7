@@ -49,3 +49,104 @@ int main(int argc, const char * argv[])
     return 0;
 }
 
+
+ 
+ // A neat use of mod, used here to reverse the digits of an entered integer:
+
+ /*
+      So the way this works, as I understand it: 
+  
+      input a number: 1024
+      
+        1024 % 10  = 4  
+        1024 / 10 = 102.4 (but because these are integers it's actually) = 102
+            
+            102 % 10 = 2
+            102 / 10 = 10
+                
+                10 % 10 = 0
+                10 / 10 = 1
+                    
+                    1 % 10 = 1
+                    1 / 10 = 0
+ 
+  In each iteration the value of inputnumber % 10 = flipped integer, and can then be printed. This 
+  would result in a program that outputs in reverse order the number the user inputs. 
+  
+  My thought is possibly using arrays, take the input:
+  
+    input a number: 1024
+                    ^  ^
+                    |  |__ input[1,3]
+            input[1,0]
+ 
+ 
+  I guess you'd need a loop of sorts to count the max array filled with info you care about:
+  
+  for (i = 0, i ,  ){
+  
+      max_num = 0 + 1; \\ When assigning digits to an array, keep a an array counter.
+  
+  }
+  
+ 
+  and then print the output by reversing the input: for ( something | i,j| ) { printf input[1,maxnum - j] } 
+  or something:
+  ß
+  so like:
+  
+                #1: printf( input[1,3] );
+                    
+                    #2: printf( input[1,2] );
+  
+                        #3: printf( input[1,1] );
+                        
+                            #4: printf( input[1,0] );
+
+  
+  
+  Anyway, it seems clunkier than the way the book did it, with at least one, probably 2 loops. I am not sure if there is any advantage to my method either, but it's nifty!
+
+  
+  */
+
+/*
+ 
+ @autoreleasepool 
+ {
+ 
+  int inputnumber, flipped_number;
+ 
+ NSLog(@"Enter your number Puny Earthling: ");
+ scanf("%i", &inputnumber);
+ 
+ while( inputnumber != 0 )
+ 
+    {
+        flipped_number = inputnumber % 10;
+        NSLog (@"%i", flipped_number);
+            inputnumber /= 10;
+ 
+    }
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ */
+
+
